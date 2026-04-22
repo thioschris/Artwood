@@ -1,0 +1,139 @@
+/* History page styles */
+
+.history-hero {
+  padding: 6rem 0 4rem;
+  background: linear-gradient(180deg, var(--bg-elevated) 0%, var(--bg-main) 100%);
+}
+
+.history-hero h1 {
+  color: var(--teal-dark);
+  text-align: center;
+}
+
+.history-subtitle {
+  text-align: center;
+  color: var(--grey-muted);
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.history-content {
+  padding-top: 2rem;
+}
+
+.history-content .container {
+  max-width: 1280px;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.history-grid-reverse .history-block {
+  order: 2;
+}
+
+.history-grid-reverse .history-image {
+  order: 1;
+}
+
+.history-block h2 {
+  margin-bottom: 1.5rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.history-block p {
+  color: var(--grey-muted);
+  margin-bottom: 1.25rem;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.history-image {
+  width: 100%;
+}
+
+.history-img {
+  width: 100%;
+  height: auto;
+  min-height: 320px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  display: block;
+  box-shadow: var(--shadow-soft);
+}
+
+.history-block-full {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.history-block-full h2 {
+  margin-bottom: 1.5rem;
+}
+
+.history-badges {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.badge {
+  background: var(--bg-elevated);
+  padding: 2rem 2.5rem;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  border: 1px solid rgba(209, 197, 177, 0.4);
+  box-shadow: var(--shadow-soft);
+}
+
+.badge-label {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  margin-bottom: 0.25rem;
+}
+
+.badge-value {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--teal-dark);
+}
+
+.badge-desc {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--grey-muted);
+  margin-top: 0.5rem;
+}
+
+.history-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .history-grid,
+  .history-grid-reverse {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .history-grid-reverse .history-block,
+  .history-grid-reverse .history-image {
+    order: unset;
+  }
+}

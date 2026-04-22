@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquire | Artwood</title>
+  <meta name="description" content="Start your project with Artwood. Submit an enquiry for bespoke furniture, architectural woodwork, or custom timber solutions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/enquire.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo-link">
+        <img src="images/logo.png" alt="Artwood" class="nav-logo">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="enquire.html" class="active">Enquire</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="enquire-hero">
+      <div class="container">
+        <h1>Enquire</h1>
+        <p class="enquire-subtitle">Tell us about your project. The more detail you provide, the better we can assist you.</p>
+      </div>
+    </section>
+
+    <section class="section enquire-content">
+      <div class="container">
+        <form class="enquire-form" id="enquireForm">
+          <!-- Contact Information -->
+          <fieldset class="form-section">
+            <legend>Contact Information</legend>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name <span class="required">*</span></label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name <span class="required">*</span></label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="company">Company / Organisation (if applicable)</label>
+              <input type="text" id="company" name="company">
+            </div>
+            <div class="form-group">
+              <label for="role">Your Role</label>
+              <select id="role" name="role">
+                <option value="">Please select</option>
+                <option value="private-client">Private Client</option>
+                <option value="architect">Architect</option>
+                <option value="interior-designer">Interior Designer</option>
+                <option value="contractor">Contractor / Builder</option>
+                <option value="developer">Developer</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <!-- Project Details -->
+          <fieldset class="form-section">
+            <legend>Project Details</legend>
+            <div class="form-group">
+              <label for="projectType">Project Type <span class="required">*</span></label>
+              <select id="projectType" name="projectType" required>
+                <option value="">Please select</option>
+                <option value="bespoke-furniture">Bespoke Furniture</option>
+                <option value="architectural-woodwork">Architectural Woodwork</option>
+                <option value="renovation">Building Renovation</option>
+                <option value="new-build">New Build Construction</option>
+                <option value="timber-structures">Timber Structures (roofs, pergolas, cladding)</option>
+                <option value="commercial">Commercial / Office Fit-out</option>
+                <option value="hospitality">Hospitality (hotel, restaurant)</option>
+                <option value="residential">Residential</option>
+                <option value="multiple">Multiple / Combination</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="projectScope">Project Scope <span class="required">*</span></label>
+              <select id="projectScope" name="projectScope" required>
+                <option value="">Please select</option>
+                <option value="small">Small (single room / few pieces)</option>
+                <option value="medium">Medium (multiple rooms / areas)</option>
+                <option value="large">Large (full building / extensive)</option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="projectLocation">Project Location <span class="required">*</span></label>
+              <input type="text" id="projectLocation" name="projectLocation" placeholder="e.g. Limassol, Cyprus" required>
+            </div>
+            <div class="form-group">
+              <label for="timeline">Preferred Timeline</label>
+              <select id="timeline" name="timeline">
+                <option value="">Please select</option>
+                <option value="urgent">Urgent (within 3 months)</option>
+                <option value="3-6">3–6 months</option>
+                <option value="6-12">6–12 months</option>
+                <option value="12-plus">12+ months</option>
+                <option value="flexible">Flexible</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget Range (optional)</label>
+              <select id="budget" name="budget">
+                <option value="">Prefer not to say</option>
+                <option value="under-10k">Under €10,000</option>
+                <option value="10k-50k">€10,000 – €50,000</option>
+                <option value="50k-100k">€50,000 – €100,000</option>
+                <option value="100k-250k">€100,000 – €250,000</option>
+                <option value="250k-plus">€250,000+</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <!-- Materials & Style -->
+          <fieldset class="form-section">
+            <legend>Materials & Style</legend>
+            <div class="form-group">
+              <label for="materials">Preferred Materials / Finishes</label>
+              <input type="text" id="materials" name="materials" placeholder="e.g. oak, walnut, glass, copper">
+            </div>
+            <div class="form-group">
+              <label for="style">Design Style</label>
+              <select id="style" name="style">
+                <option value="">Please select</option>
+                <option value="modern">Modern</option>
+                <option value="traditional">Traditional</option>
+                <option value="contemporary">Contemporary</option>
+                <option value="minimalist">Minimalist</option>
+                <option value="mixed">Mixed / Eclectic</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="referenceProject">Reference Project (if any)</label>
+              <input type="text" id="referenceProject" name="referenceProject" placeholder="e.g. similar to our Parklane project">
+            </div>
+          </fieldset>
+
+          <!-- Project Description -->
+          <fieldset class="form-section">
+            <legend>Project Description</legend>
+            <div class="form-group">
+              <label for="description">Please describe your project in detail <span class="required">*</span></label>
+              <textarea id="description" name="description" rows="6" required placeholder="Include: what you need, key areas/spaces, any specific requirements, dimensions if known..."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="attachments">Attachments</label>
+              <input type="file" id="attachments" name="attachments" multiple accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+              <span class="form-hint">You can upload plans, sketches, or reference images (PDF, JPG, PNG, DOC). Max 10MB total.</span>
+            </div>
+          </fieldset>
+
+          <!-- How did you hear about us -->
+          <fieldset class="form-section">
+            <legend>Additional Information</legend>
+            <div class="form-group">
+              <label for="referral">How did you hear about Artwood?</label>
+              <select id="referral" name="referral">
+                <option value="">Please select</option>
+                <option value="search">Search / Google</option>
+                <option value="recommendation">Recommendation</option>
+                <option value="portfolio">Saw our portfolio / past work</option>
+                <option value="social">Social media</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="additional">Any additional information</label>
+              <textarea id="additional" name="additional" rows="3" placeholder="Anything else we should know..."></textarea>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-submit">Submit Enquiry</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <img src="images/General/ARTWOOD_logo_brown2.png" alt="Artwood" class="footer-logo">
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="enquire.html">Enquire</a></li>
+        <li><a href="https://www.instagram.com/artwood.fnd/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>Artwood Furniture and Decoration Ltd · Member of PASYVEX · EN ISO 9001:2015 certified</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/enquire.js"></script>
+</body>
+</html>

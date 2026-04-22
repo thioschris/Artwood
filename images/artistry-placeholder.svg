@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4CFC4"/>
+      <stop offset="100%" style="stop-color:#E8E4DC"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#g)"/>
+  <text x="450" y="355" font-family="Georgia, serif" font-size="18" fill="#8B8378" text-anchor="middle">Add your photo: images/artistry-craft.jpg</text>
+</svg>

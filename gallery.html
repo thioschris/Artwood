@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Artwood</title>
+  <meta name="description" content="Browse the Artwood gallery: hotels, schools, offices, and private residential projects across Cyprus.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo-link">
+        <img src="images/logo.png" alt="Artwood" class="nav-logo">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="enquire.html">Enquire</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="gallery-hero">
+      <div class="container">
+        <h1>Gallery</h1>
+        <p class="gallery-subtitle">Our complete collection of projects across Cyprus</p>
+      </div>
+    </section>
+
+    <section class="section gallery-content">
+      <div class="container">
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Hotel">Hotels</button>
+          <button class="filter-btn" data-filter="School">Schools</button>
+          <button class="filter-btn" data-filter="Offices">Offices</button>
+          <button class="filter-btn" data-filter="Residential">Residential</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Populated by JS from gallery-projects.js -->
+        </div>
+
+        <div class="gallery-cta">
+          <a href="enquire.html" class="btn btn-primary">Start Your Project</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox modal -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous image">&#8249;</button>
+    <button class="lightbox-next" aria-label="Next image">&#8250;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-info">
+        <p class="lightbox-title" id="lightboxTitle"></p>
+        <p class="lightbox-counter" id="lightboxCounter"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <img src="images/General/ARTWOOD_logo_brown2.png" alt="Artwood" class="footer-logo">
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="enquire.html">Enquire</a></li>
+        <li><a href="https://www.instagram.com/artwood.fnd/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>Artwood Furniture and Decoration Ltd · Member of PASYVEX · EN ISO 9001:2015 certified</p>
+    </div>
+  </footer>
+
+  <script src="js/gallery-projects.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
