@@ -421,6 +421,10 @@ a {
   background: var(--bg-dark);
 }
 
+.footer-contact .contact-map .leaflet-control-attribution {
+  display: none;
+}
+
 .footer-contact .contact-map .leaflet-control-zoom a {
   color: var(--teal-dark);
   border-color: rgba(209, 197, 177, 0.55);
