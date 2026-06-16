@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const mapEl = document.getElementById('contactMap');
   if (!mapEl || typeof L === 'undefined') return;
 
-  const workshopCoords = [34.6546, 32.9784];
+  const workshopCoords = [34.7347176, 32.9439674];
 
   const map = L.map('contactMap', {
     center: workshopCoords,
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   L.marker(workshopCoords, { icon: markerIcon })
     .addTo(map)
-    .bindPopup('<strong>Artwood</strong><br>15 Iakovou Katsounotou<br>Ayios Sylas, Limassol')
+    .bindPopup('<strong>Artwood</strong><br>Iakovou Katsounotou 15<br>Limassol 4193, Cyprus')
     .openPopup();
 
   setTimeout(function() {
