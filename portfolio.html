@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
@@ -46,7 +47,7 @@
         <!-- Petit Palais -->
         <article class="portfolio-project" id="petit-palais">
           <div class="project-header">
-            <span class="project-category">Hotel</span>
+            <span class="project-category">Hotels</span>
             <h2>Petit Palais</h2>
             <p>Hotel interiors and bespoke timber joinery — refined craftsmanship for the guest experience.</p>
           </div>
@@ -63,7 +64,7 @@
         <!-- Foley's School -->
         <article class="portfolio-project" id="foleys">
           <div class="project-header">
-            <span class="project-category">School</span>
+            <span class="project-category">Schools</span>
             <h2>Foley's School</h2>
             <p>Educational spaces with custom timber furniture, fittings, and architectural woodwork.</p>
           </div>
@@ -74,39 +75,39 @@
             <div class="project-img" style="background-image: url('images/Foley%27s%20School/Foleys_9.jpg');"></div>
             <div class="project-img" style="background-image: url('images/Foley%27s%20School/Foleys_11.jpg');"></div>
             <div class="project-img" style="background-image: url('images/Foley%27s%20School/Foleys_1.jpg');"></div>
-            <div class="project-img" style="background-image: url('images/Foley%27s%20School/Foleys_17.jpg');"></div>
           </div>
         </article>
 
-        <!-- Oval -->
-        <article class="portfolio-project" id="oval">
+        <!-- Commercial -->
+        <article class="portfolio-project" id="commercial">
           <div class="project-header">
-            <span class="project-category">Offices</span>
-            <h2>Oval</h2>
-            <p>Contemporary office environment — architectural timber, reception, and workspace joinery.</p>
+            <span class="project-category">Commercial</span>
+            <h2>Offices</h2>
+            <p>Office and workplace interiors and exteriors which include architectural timber in areas like receptions, meeting spaces, and foyers.</p>
           </div>
           <div class="project-gallery">
-            <div class="project-img" style="background-image: url('images/Oval/Oval_3.jpg');"></div>
-            <div class="project-img" style="background-image: url('images/Oval/Oval_4.jpg');"></div>
             <div class="project-img" style="background-image: url('images/Oval/Oval_5.jpg');"></div>
-            <div class="project-img" style="background-image: url('images/Oval/Oval_7.jpg');"></div>
             <div class="project-img" style="background-image: url('images/Oval/Oval_13.jpg');"></div>
-            <div class="project-img" style="background-image: url('images/Oval/Oval_14.jpg');"></div>
+            <div class="project-img" style="background-image: url('images/Intership/Internship_2.jpg');"></div>
+            <div class="project-img" style="background-image: url('images/Intership/Internship_27.jpg');"></div>
+            <div class="project-img" style="background-image: url('images/Intership/Internship_37.jpg');"></div>
+            <div class="project-img" style="background-image: url('images/Intership/Internship_49.jpg');"></div>
           </div>
         </article>
 
-        <!-- Residential: combined homes (folder names not shown on site) -->
-        <article class="portfolio-project" id="private-residences">
+        <!-- Private Residences -->
+        <article class="portfolio-project" id="private-residency">
           <div class="project-header">
-            <h2>Residential</h2>
-            <p>Private homes across Cyprus — bespoke joinery, fitted furniture, and architectural timber tailored to each client.</p>
+            <span class="project-category">Residential</span>
+            <h2>Private Residences</h2>
+            <p>Private homes across Cyprus with bespoke joinery, fitted furniture, and architectural timber tailored to each client.</p>
           </div>
           <div class="project-gallery">
             <div class="project-img" style="background-image: url('images/Andreas%20Artist/_C4A2090-HDR.jpg');"></div>
             <div class="project-img" style="background-image: url('images/Andreas%20Artist/_C4A2143-HDR.jpg');"></div>
-            <div class="project-img" style="background-image: url('images/Piperaris/piperaris_18.jpg');"></div>
+            <div class="project-img" style="background-image: url('images/Nasia/nasia_17.jpg');"></div>
             <div class="project-img" style="background-image: url('images/Nasos/nasos_1.jpg');"></div>
-            <div class="project-img" style="background-image: url('images/Piperaris/piperaris_35.jpg');"></div>
+            <div class="project-img" style="background-image: url('images/Piperaris/piperaris_18.jpg');"></div>
             <div class="project-img" style="background-image: url('images/Nasos/nasos_54.jpg');"></div>
           </div>
         </article>
@@ -120,22 +121,49 @@
   </main>
 
   <footer class="footer">
-    <div class="footer-inner">
-      <img src="images/General/ARTWOOD_logo_brown2.png" alt="Artwood" class="footer-logo">
-      <ul class="footer-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="history.html">History</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="enquire.html">Enquire</a></li>
-        <li><a href="https://www.instagram.com/artwood.fnd/" target="_blank" rel="noopener">Instagram</a></li>
-      </ul>
+    <div class="footer-contact" aria-labelledby="contactHeading">
+      <div class="container">
+        <div class="contact-header">
+          <h2 id="contactHeading">Contact &amp; Location</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-details">
+            <div class="contact-card">
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-label">Address</span>
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=15+Iakovou+Katsounotou+Street,+Ayios+Sylas,+4193+Limassol,+Cyprus" target="_blank" rel="noopener noreferrer">
+                    15 Iakovou Katsounotou Street<br>
+                    3rd Industrial Area, Ayios Sylas<br>
+                    4193 Limassol, Cyprus
+                  </a>
+                </li>
+                <li>
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+35725870940">+357 25 870 940</a>
+                </li>
+                <li>
+                  <span class="contact-label">Instagram</span>
+                  <a href="https://www.instagram.com/artwood.fnd/" target="_blank" rel="noopener">@artwood.fnd</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contact-map-wrap">
+            <p class="map-hint" aria-hidden="true">Drag to explore · Scroll to zoom</p>
+            <div id="contactMap" class="contact-map" role="region" aria-label="Interactive map showing Artwood workshop location"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="footer-bottom">
+
+    <div class="footer-bottom footer-bottom--below-map">
       <p>Artwood Furniture and Decoration Ltd · Member of PASYVEX · EN ISO 9001:2015 certified</p>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/footer-map.js"></script>
 </body>
 </html>

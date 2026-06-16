@@ -7,6 +7,7 @@
   --color-primary-deep: #775a00;
   --color-accent: #b8922e;
   --color-accent-hover: #c9a53a;
+  --color-contact-link-hover: #d4b896;
   --color-primary: #2a2419;
   --color-primary-muted: #635d58;
   --color-primary-light: #7f7664;
@@ -136,9 +137,16 @@ a {
   justify-content: space-between;
 }
 
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+}
+
 .nav-logo {
-  height: 64px;
+  height: 52px;
   width: auto; /* intrinsic aspect ratio preserved */
+  transform: translateY(5px);
 }
 
 .nav-links {
@@ -288,43 +296,8 @@ a {
 .footer {
   background: linear-gradient(180deg, var(--bg-dark-mid) 0%, var(--bg-dark) 100%);
   color: var(--color-text-light);
-  padding: 4.5rem 0 2rem;
+  padding: 4.5rem 0 0;
   margin-top: 0;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 3rem;
-  align-items: center;
-}
-
-.footer-logo {
-  height: 56px;
-  width: auto; /* intrinsic aspect ratio preserved */
-  opacity: 0.92;
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem 2rem;
-  list-style: none;
-  justify-content: flex-end;
-}
-
-.footer-links a {
-  color: rgba(242, 237, 229, 0.75);
-  font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-}
-
-.footer-links a:hover {
-  color: var(--color-accent);
 }
 
 .footer-bottom {
@@ -337,6 +310,158 @@ a {
   font-size: 0.9375rem;
   color: rgba(162, 149, 133, 0.85);
   line-height: 1.6;
+}
+
+.footer-bottom--below-map {
+  max-width: none;
+  margin-top: 2.5rem;
+  padding: 1.25rem 2rem 1.75rem;
+}
+
+/* Footer contact + map */
+.footer-contact {
+  padding: 0;
+}
+
+.footer-contact .contact-header {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto 2.5rem;
+}
+
+.footer-contact .contact-header h2 {
+  color: var(--color-text-light);
+  margin-bottom: 0;
+}
+
+.footer-contact .contact-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 340px) 1fr;
+  gap: 2rem;
+  align-items: stretch;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-contact .contact-card {
+  height: 100%;
+  padding: 2rem;
+  background: rgba(254, 249, 241, 0.06);
+  border: 1px solid rgba(209, 197, 177, 0.18);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.footer-contact .contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.65rem;
+}
+
+.footer-contact .contact-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.footer-contact .contact-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.footer-contact .contact-list a {
+  color: rgba(242, 237, 229, 0.88);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition);
+  line-height: 1.7;
+}
+
+.footer-contact .contact-list a:hover {
+  color: var(--color-contact-link-hover);
+}
+
+.footer-contact .contact-map-wrap {
+  position: relative;
+  min-height: 420px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(209, 197, 177, 0.2);
+}
+
+.footer-contact .map-hint {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 500;
+  margin: 0;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--teal-dark);
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 999px;
+  border: 1px solid rgba(209, 197, 177, 0.5);
+  pointer-events: none;
+  backdrop-filter: blur(6px);
+}
+
+.footer-contact .contact-map {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  background: var(--bg-dark);
+}
+
+.footer-contact .contact-map .leaflet-control-zoom a {
+  color: var(--teal-dark);
+  border-color: rgba(209, 197, 177, 0.55);
+}
+
+.footer-contact .contact-map .leaflet-control-zoom a:hover {
+  background: var(--bg-panel);
+  color: var(--color-accent);
+}
+
+.footer-contact .contact-map .leaflet-popup-content-wrapper {
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+  box-shadow: var(--shadow-soft);
+}
+
+.artwood-map-marker {
+  background: transparent;
+  border: none;
+}
+
+.artwood-map-pin {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: var(--color-accent);
+  border: 3px solid var(--color-white);
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  box-shadow: 0 4px 14px rgba(44, 62, 58, 0.35);
+}
+
+@media (max-width: 900px) {
+  .footer-contact .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-contact .contact-map-wrap,
+  .footer-contact .contact-map {
+    min-height: 360px;
+  }
 }
 
 /* Page transitions / main content */
@@ -352,7 +477,8 @@ main {
   }
 
   .nav-logo {
-    height: 44px;
+    height: 38px;
+    transform: translateY(4px);
   }
 
   main {
@@ -389,24 +515,5 @@ main {
 
   .nav-links a::after {
     display: none;
-  }
-
-  .footer-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.25rem;
-    text-align: center;
-  }
-
-  .footer-links {
-    order: 1;
-    justify-content: center;
-  }
-
-  .footer-logo {
-    order: 2;
-    height: 42px;
-    margin: 0 auto;
   }
 }

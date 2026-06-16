@@ -15,8 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // Render gallery grid from galleryProjects
   function renderGrid() {
     grid.innerHTML = galleryProjects.map(project => {
-      const subtitle =
-        project.category && project.category !== project.name
+      const subtitle = project.label
+        ? `<span>${project.label}</span>`
+        : project.category && project.category !== project.name
           ? `<span>${project.category}</span>`
           : '';
       return `

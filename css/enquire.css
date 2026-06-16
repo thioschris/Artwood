@@ -1,7 +1,7 @@
 /* Enquire page styles */
 
 .enquire-hero {
-  padding: 6rem 0 4rem;
+  padding: 6rem 0 2rem;
   background: linear-gradient(180deg, var(--bg-elevated) 0%, var(--bg-main) 100%);
 }
 
@@ -21,7 +21,7 @@
 }
 
 .enquire-content {
-  padding-top: 2rem;
+  padding-top: 0.75rem;
   padding-bottom: 5rem;
 }
 
